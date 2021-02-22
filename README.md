@@ -24,9 +24,9 @@ This template project includes some useful utilities to enhance WebAPI developme
 
 ### Secure Settings
 
-The [Settings.cs](DemoService.Core/Settings.cs) introduces a new mechanism to keep the credentials in your home directory that is usually only accessible by yourself.
+The [Settings.cs](./DemoService/DemoService.Core/Settings.cs) introduces a new mechanism to keep the credentials in your home directory that is usually only accessible by yourself.
 
-The [environment_settings.json](environment_settings.json) in the template folder is an exmaple for you to update and then copied to your home folder that is usually "C:/users/{your_name}/". You can add other parameters and update the ConcernedSettings list within [Settings.cs](DemoService.Core/Settings.cs) such as AWS/Azure credentials, ODATA REST API tokens etc.
+The [environment_settings.json](./environment_settings.json) in the template folder is an exmaple for you to update and then copied to your home folder that is usually "**C:/users/{your_name}/**". You can add other parameters and update the ConcernedSettings list within [Settings.cs](DemoService.Core/Settings.cs) such as AWS/Azure credentials, ODATA REST API tokens etc.
 
 By setting environment variable **environmentName** to your working environment like **dev**, the dev settings would be loaded automatically.
 
@@ -35,7 +35,7 @@ To switch environment, updating the **environmentName** would enable the Service
 
 ### SQL Helper
 
-The [SQLHelper.cs](DemoService.Core/Helpers/SQLHelper.cs) provides a powerful set of SQL utilities like:
+The [SQLHelper.cs](./DemoService/DemoService.Core/Helpers/SQLHelper.cs) provides a powerful set of SQL utilities like:
 * Real async executions for each table, row and column that has hardly any sample codes to follow.
 * .NET objects to SQLParameters conversions to allow you feed the SQL script with named or ordered arguments without manual preparation.
 * Extract SQL script from .sql files for convenience.
@@ -50,7 +50,7 @@ With advanced designs, this SQLHelper has provided more SQL functionalites with 
 
 ### Dynamic Helper
 
-As amendment to the SQLHelper, the [DynamicHelper.cs](DemoService.Core/Helpers/DynamicHelper.cs) provides some handy utilities like:
+As amendment to the SQLHelper, the [DynamicHelper.cs](./DemoService/DemoService.Core/Helpers/DynamicHelper.cs) provides some handy utilities like:
 * Merge tables into list of models with different strategies to handle conflicted values of the same name: this is a quite common scenario with SQL data returned in multiple tables.
 * Extract concerned values from a list of dictionaries or dynamic objects.
 * Convert single or multiple dyanmic object(s) to Dictionary(ies).
