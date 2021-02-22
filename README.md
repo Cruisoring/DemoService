@@ -26,7 +26,7 @@ This template project includes some useful utilities to enhance WebAPI developme
 
 The [Settings.cs](./DemoService/DemoService.Core/Settings.cs) introduces a new mechanism to keep the credentials in your home directory that is usually only accessible by yourself.
 
-The [environment_settings.json](./environment_settings.json) in the template folder is an exmaple for you to update and then copied to your home folder that is usually "**C:/users/{your_name}/**". You can add other parameters and update the ConcernedSettings list within [Settings.cs](DemoService.Core/Settings.cs) such as AWS/Azure credentials, ODATA REST API tokens etc.
+The [environment_settings.json](./environment_settings.json) in the template folder is an exmaple for you to update and then copied to your home folder that is usually "**C:/users/{your_name}/**". You can add other parameters and update the ConcernedSettings list within [Settings.cs](./DemoService/DemoService.Core/Settings.cs) such as AWS/Azure credentials, ODATA REST API tokens etc.
 
 By setting environment variable **environmentName** to your working environment like **dev**, the dev settings would be loaded automatically.
 
