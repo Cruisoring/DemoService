@@ -464,46 +464,6 @@ namespace DemoService.Core.Helpers
             return entities;
         }
 
-        //        public static Dictionary<string, Func<string, object>> ParameterConverters = new Dictionary<string, Func<string, object>>()
-        //        {
-        //            {"@@today", date => DateTime.Today },
-        //            {"@BillInvoiceStatusId", id => Int32.Parse(id) }
-        //        };
-        //
-        //        public static Dictionary<string, object> AsDictionary(ScenarioContext scenarioContext, Table table)
-        //        {
-        //            Dictionary<string, object> result = new Dictionary<string, object>();
-        //            var row1 = table.Rows[0];
-        //
-        //            foreach (var header in table.Header)
-        //            {
-        //                var value = row1[header];
-        //                if (scenarioContext.ContainsKey(value))
-        //                    result[header] = scenarioContext[value];
-        //                else
-        //                {
-        //                    string matchedPattern = ParameterConverters.Keys.FirstOrDefault(k => Regex.IsMatch(value, k) || Regex.IsMatch(header, k));
-        //                    if (matchedPattern != null)
-        //                    {
-        //                        result[header] = ParameterConverters[matchedPattern].Invoke(value);
-        //                    }
-        //                    else
-        //                    {
-        //                        result[header] = value;
-        //                    }
-        //                }
-        //                Console.WriteLine($"{header} = {result[header]}");
-        //            }
-        //
-        //            return result;
-        //        }
-        //
-        //        public static SqlParameter[] AsSqlParameters(ScenarioContext scenarioContext, Table table)
-        //        {
-        //            Dictionary<string, object> arguments = AsDictionary(scenarioContext, table);
-        //            return AsSqlParameters(arguments);
-        //        }
-
         /// <summary>
         /// Convert named .NET objects to SqlParameters.
         /// </summary>

@@ -1,0 +1,20 @@
+{
+	"dev":{
+		"dbUsername": "dev_username",
+		"dbPassword": "dev_password",
+		"dbSource": "10.1.22.33",
+		"dbConnectionString": "Data Source=xxxxx;Initial Catalog=Users;Integrated Security=True"
+	},
+	"test":{
+		"dbUsername": "test_username",
+		"dbPassword": "test_password",
+		"dbSource": "test-db",
+		"dbConnectionString": "Data Source=yyyyyy;Initial Catalog=Marketing;User Id=abcd;Password=xwewscddd;"
+	},
+	"prod":{
+		"dbUsername": "prod_username",
+		"dbPassword": "prod_password",
+		"dbSource": "10.21.21.33",
+		"dbConnectionString": "Data Source=ProdSql.local;Initial Catalog=Products;User Id=prod_admin;Password=ewisidisidfe;"
+	},
+}

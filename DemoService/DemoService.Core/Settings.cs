@@ -17,7 +17,7 @@ namespace DemoService.Core
         public const string DBSourceKey = "dataSource";
         public const string DBPasswordKey = "dbPassword";
         public const string DBUserNameKey = "dbUsername";
-        public const string DBConnectionStringKey = "dbConnectionFormat";
+        public const string DBConnectionStringKey = "dbConnectionString";
 
         // Concerned Setting values
         public static readonly List<string> ConcernedSettings = new List<string>()

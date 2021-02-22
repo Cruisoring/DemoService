@@ -410,49 +410,6 @@ namespace DemoService.Core.Helpers
         }
 
 
-        // public static Dictionary<PropertyDescriptor, string> GetMapping(dynamic dynObj,
-        //     IEnumerable<string> mappedNames)
-        // {
-        //     Dictionary<PropertyDescriptor, string> mappings = null;
-        //
-        //     PropertyDescriptorCollection propertyDescriptors = TypeDescriptor.GetProperties(dynObj);
-        //     HashSet<string> dynPropertyNames = Enumerable.Range(0, propertyDescriptors.Count)
-        //         .Select(i => propertyDescriptors[i].Name).ToHashSet();
-        //
-        //     string[] exactlyMatchedNames = mappedNames.Where(dynPropertyNames.Contains).ToArray();
-        //     mappings = exactlyMatchedNames.ToDictionary(
-        //         pn => propertyDescriptors[pn],
-        //         pn => pn
-        //     );
-        //
-        //     //dynPropertyNames.RemoveWhere(exactlyMatchedNames.Contains);
-        //     return mappings;
-        // }
-
-        // public static Dictionary<string, Delta> GetPropertyDeltas(dynamic dynObj, Dictionary<string, object> jsonDictionary)
-        // {
-        //     Dictionary<PropertyDescriptor, string> mappings = GetMapping(dynObj, jsonDictionary.Keys);
-        //
-        //     Dictionary<string, Delta> deltas = new Dictionary<string, Delta>();
-        //     foreach (var mapping in mappings)
-        //     {
-        //         object sqlValue = mapping.Key.GetValue(dynObj);
-        //         object jsonValue = jsonDictionary[mapping.Value];
-        //         if (!Object.Equals(sqlValue, jsonValue))
-        //         {
-        //            deltas.Add(mapping.Value, new Delta()
-        //             {
-        //                 SqlColumnName = mapping.Key.Name,
-        //                 JsonKeyName = mapping.Value,
-        //                 SqlValue = sqlValue,
-        //                 JsonValue = jsonValue
-        //             });
-        //         }
-        //     }
-        //
-        //     return deltas;
-        // }
-
         public static IDictionary<string, IDelta> GetDeltas(object source, object target)
         {
             IDictionary<string, object> sqlDict = PropertiesToDictionary(source);
