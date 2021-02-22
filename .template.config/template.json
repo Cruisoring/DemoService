@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": [ "micro", "webapi" ],
+  "identity": "DemoService",
+  "name": "DemoService",
+  "shortName": "swa",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+	},
+	"sourceName": "DemoService",  
+	"preferNameDirectory":"true"
+}
